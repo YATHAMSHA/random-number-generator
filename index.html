@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title>Random Number Generator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script src="generator.js" async></script>
+	<header>
+		<h1 id= "diceRoll" class="mainHeader">Roll the Die..🎲 </h1>
+		<hr>
+	</header>
+	<article>
+		<section class="diceOptions">
+			<div class="diceAmount">
+				<label for="diceAmount">How many dice?</label>
+				<div><input required type="number" id="diceAmount" value="1" min="1" max="20"></div>
+			</div>
+			<div>
+				<div class="diceSides">
+					<div><label for="diceSides">How many sides per die?</label></div>
+					<select id="diceSides">
+						<option value="2">D2</option>
+						<option value="3">D3</option>
+						<option value="4">D4</option>
+						<option value="5">D5</option>
+						<option value="6" selected>D6</option>
+						<option value="7">D7</option>
+						<option value="10">D10</option>
+						<option value="14">D14</option>
+						<option value="16">D16</option>
+						<option value="18">D18</option>
+						<option value="20">D20</option>
+						<option value="24">D24</option>
+						<option value="30">D30</option>
+						<option value="34">D34</option>
+						<option value="48">D48</option>
+						<option value="50">D50</option>
+						<option value="60">D60</option>
+						<option value="100">D100</option>
+						<option value="120">D120</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		<section class="resultsContainer">
+			<p class="blank" id="result"></p>
+		</section>
+	</article>
+</body>
+</html>
